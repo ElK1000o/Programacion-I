@@ -22,13 +22,13 @@ while True:
 
     for i in range(n):
         while True:
-            nota = float(input(f"Indique la nota {i + 1}: "))
-            if nota < 1 or nota > 7:
-                print("La nota no puede ser menor a 1 ni mayor a 7.")
-            else:
+            try:
+                nota = float(input(f"Indique la nota {i + 1}: "))
+                assert nota>=1 and nota<=7
                 notas.append(nota)
                 break
-                
+            except AssertionError:
+                print("La nota no puede ser menor a 1 ni mayor a 7.")
         while True:
             porcentaje = int(input(f"Indique el porcentaje de la nota {i + 1}: "))
             if porcentaje < 0 or porcentaje > 100:

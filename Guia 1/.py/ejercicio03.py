@@ -33,11 +33,11 @@ while True:
 
 while True:
     while True:
-        letras=input("ingrese las letras (EN MAYUSCULAS) presentes en la patente de la moto: ")
+        letras=input("ingrese las letras presentes en la patente de la moto: ")
         if len(letras)>=2 and len(letras)<=3:
             break
         else:
-            print("La cantidad de letras (EN MAYUSCULAS) no puede ser menor a 2, ni mayor a 3. Ingreselas nuevamente: ")
+            print("La cantidad de letras no puede ser menor a 2, ni mayor a 3. Ingreselas nuevamente: ")
 
     while True:
         numero=int(input("ingrese las numeros presentes en la patente de la moto: "))
@@ -54,7 +54,7 @@ while True:
         print("La patente debe contener exactamente 5 caracteres en total. Asegúrese de ingresar correctamente los datos. ")
 
 
-patente=str(f"{letras}°{numeros}")
+patente=str(f"{letras.upper()}°{numeros}")
 
 # Descripcion
 
