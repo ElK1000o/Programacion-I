@@ -14,12 +14,18 @@ Contenido del Repositorio
 
 El repositorio está organizado en las siguientes carpetas y archivos:
 
-Taller 1/: Esta carpeta contiene los archivos relacionados con la unidad 1 del curso.
+Taller 1/: Esta carpeta contiene la introducción a Python.
 
-Taller 2/: Se encuentran los ejercicios de la unidad 2.
+Taller 2/: Se encuentran los ejercicios sobre variables y solicitud de datos.
 
-Taller 3/: Contiene scripts relacionados con la unidad 3.
+Taller 3/: Contiene scripts relacionados con ciclos.
 
-Guia 1/: Corresponde a trabajo autónomo.
+Taller 4/: Aparece material sobre manejo de excepciones.
 
-Guia 2/: Corresponde a trabajo autónomo.
+Taller 5/: Correspondiente a funciones y modulos.
+
+Guia 1/: Corresponde a trabajo autónomo 1 (T1+T2).
+
+Guia 2/: Corresponde a trabajo autónomo 2 (G1+T3).
+
+Guia 3/: Corresponde a trabajo autónomo 3 (G2+T4).
