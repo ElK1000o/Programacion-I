@@ -18,8 +18,8 @@
 from os import system
 
 def promedio(b):
+    c=0
     for i in b:
-        c=0
         c+=i
     prom=c/len(b)
     return prom
@@ -115,6 +115,7 @@ for i in range(n):
             print("El espacio no puede quedar en blanco. ")
         except:
             print("Ingrese correctamente el precio. (debe ser entre $1.000.000 y $10.000.000)")
+    system("cls")
 
 if n==1:
     print("Se digitó una pintura. ")
