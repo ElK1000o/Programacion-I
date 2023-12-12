@@ -36,3 +36,4 @@ El repositorio está organizado en las siguientes carpetas y archivos:
 - **Pruebas:** (Correspondientes a evaluaciones del curso)
     - **Prueba 2/**: Corresponde a la segunda evaluación del curso (G3+T5).
 	- **Prueba 3/**: Corresponde a la tercera evaluación del curso (G6).
+	- **Prueba 4/**: Corresponde a la cuarta evaluación del curso.
