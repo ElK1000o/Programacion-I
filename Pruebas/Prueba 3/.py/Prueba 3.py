@@ -26,7 +26,8 @@ def Menu():
         print()
         
         try:
-            op=int(input("Ingrese numérciamente la opcion del menu: "))   
+            op=int(input("Ingrese numérciamente la opcion del menu: "))
+            assert op>=1 and op<=7   
             if op==1:
                 lista_pizzas = Agregar(lista_pizzas)
             elif op==2:
@@ -132,26 +133,32 @@ def Buscar(diccionario):
     print("    BUSCAR VENTAS   ")
     print("---------------------")
     print()
-    try:
-        pedido=int(input("Ingrese el número de pedido a buscar: "))
-        assert pedido>0
-        if pedido in diccionario:
-            print(f"El pedido es el siguiente. ")
-            if pedido in diccionario:
-                print(f"Pedido: {pedido} -> Orden = {diccionario[pedido]}")
-            system("pause")
-        else:
-            print("El pedido no existe. ")
-            system("pause")
-    except ValueError:
-        print("El espacio no puede quedar en blanco / El valor debe ser numérico. ")
+    if len(diccionario)==0:
+        print("No hay pedidos para buscar. ")
+        print()
         system("pause")
         system("cls")
-    except AssertionError:
-        print("Ingrese correctamente el valor. ")
-        system("pause")
-        system("cls")         
-    return
+    else:
+        try:
+            pedido=int(input("Ingrese el número de pedido a buscar: "))
+            assert pedido>0
+            if pedido in diccionario:
+                print(f"El pedido es el siguiente. ")
+                if pedido in diccionario:
+                    print(f"Pedido: {pedido} -> Orden = {diccionario[pedido]}")
+                system("pause")
+            else:
+                print("El pedido no existe. ")
+                system("pause")
+        except ValueError:
+            print("El espacio no puede quedar en blanco / El valor debe ser numérico. ")
+            system("pause")
+            system("cls")
+        except AssertionError:
+            print("Ingrese correctamente el valor. ")
+            system("pause")
+            system("cls")         
+        return
 
 def eliminar_mediana(diccionario):
     elimina=[]
