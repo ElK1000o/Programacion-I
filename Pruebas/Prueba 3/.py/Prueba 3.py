@@ -195,10 +195,14 @@ def estadistica(diccionario):
     print("    ESTADISTICA DE VENTAS   ")
     print("-----------------------------")
     print()
-    print(f"La cantidad total de pizzas vendidas es de: {len(diccionario)}")
-    print()
-    print(f"El precio de las pizzas vendidas es de: {total}")
-    print()
+    if len(diccionario)>0:     
+        print(f"La cantidad total de pizzas vendidas es de: {len(diccionario)}")
+        print()
+        print(f"El precio de las pizzas vendidas es de: {total}")
+        print()
+    else:
+        print("No existen pedidos para estadística actualmente.")
+        print()
     system("pause")
 
 def Salir():
